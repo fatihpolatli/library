@@ -4,7 +4,6 @@
 	<groupId>com.fatih.test</groupId>
 	<artifactId>library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>library</name>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
