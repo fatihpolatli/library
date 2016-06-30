@@ -17,7 +17,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @ComponentScan({"com.sample.library.service","com.sample.library.controller"})
 @SpringBootApplication
 public class Application{
-
+	
+	
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

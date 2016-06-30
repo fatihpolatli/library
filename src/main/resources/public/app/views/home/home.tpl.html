@@ -1,0 +1,50 @@
+<div class="col-md-12">
+    <div class="pull-right">
+        <a ng-click="addBook()" href="">
+            <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <th>BOOK NAME</th>
+                <th>AUTHOR</th>
+                <th class="col-sm-1"></th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in bookList track by item.id">
+                    <td>
+                        <span editable-text="item.name" onbeforesave="checkData($data);" e-type="text" e-placeholder="name" e-name="name" e-form="rowform" e-required>{{item.name}}</span>
+                    </td>
+                    <td>
+                        <span editable-text="item.author" onbeforesave="checkData($data);"  e-type="text" e-placeholder="author" e-name="author" e-form="rowform" e-required>{{item.author}}</span>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <!-- form -->
+                        <form editable-form name="rowform" onbeforesave="saveBook($data, item.id,rowform)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == item">
+                            <div class="repo-actions pull-right">
+                                <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary">
+                                    save
+                                </button>
+                                <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel();cancelEdit(item,$index);" class="btn btn-default">
+                                    cancel
+                                </button>
+                            </div>
+                        </form>
+                        <div class="buttons" ng-show="!rowform.$visible">
+                            <div class="repo-actions">
+                                <a href="" class="pull-right" ng-click="setDeleteItem(item,$index)" data-placement="left" data-container="body" data-auto-close="true" data-template-url="views/templates/confirmDeletePopover.tpl.html" bs-popover>
+                                    <span data-title="Delete" data-placement="left" bs-tooltip>
+                                              <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+                                            </span>
+                                </a>
+                                <a href="" class="pull-right" data-toggle="tooltip" data-placement="bottom" ng-click="rowform.$show();beginEdit(item,index);" data-title="Edit" bs-tooltip><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- <button class="btn btn-default" ng-click="addUser()">Add row</button> -->
+    </div>
+</div>

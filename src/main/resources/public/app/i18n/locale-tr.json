@@ -1,0 +1,12 @@
+{
+	"MENU" : {
+
+		"USERS_GROUPS" : "Kullanıcı & Gruplar",
+		"SECURITY" : "Yetkilendirme",
+		"REPORTS" : "Raporlar",
+		"SYSTEM" : "Sistem",
+		"SYSTEM_MANAGEMENT" : "Sistem Yönetimi",
+		"PREFERENCES" : "Seçenekler",
+		"LOGOUT" : "Çıkış"
+	}
+}

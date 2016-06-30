@@ -1,0 +1,13 @@
+{
+	"MENU" : {
+
+		"USERS_GROUPS" : "Users & Groups",
+		"SECURITY" : "Security",
+		"REPORTS" : "Reports",
+		"SYSTEM" : "System",
+		"SYSTEM_MANAGEMENT" : "System Manager",
+		"PREFERENCES" : "Preferences",
+		"LOGOUT" : "Logout"
+
+	}
+}

@@ -1,0 +1,37 @@
+{
+    "GENERAL_ERROR_TITLE": "Hata!",
+    "NO_DATA_MESSAGE": "Data bulunamadı.",
+    "APPLICATION_ERROR_MESSAGE": "Uygulama hatası oluştu.",
+    "SUCCESSFUL_CONTENT": "Successful",
+    "SUCCESSFUL_TITLE": "Successful",
+
+    "SELECT_ERROR_MESSAGE": "Kayıtlar alınırken hata oluştu.",
+    "CREATE_ERROR_MESSAGE": "Kayıt oluşturulurken hata oluştu.",
+    "UPDATE_ERROR_MESSAGE": "Kayıt güncellenirken hata oluştu.",
+    "DELETE_ERROR_MESSAGE": "Kayıt silinirken hata oluştu.",
+    "DELETE_SUCCESSFUL_MESSAGE": "Delete Successful.",
+
+    "USER_NOT_FOUND_MESSAGE": "Kullanıcıa bulunamadı.",
+    "USER_NOT_REMOVED_MESSAGE": "Kullanıcı silinemedi.",
+
+    "GROUPS_NOT_FOUND_MESSAGE": "Bu kullanıcı bir gruba ait değildir.",
+
+    "GROUP_MEMBERS_NOT_FOUND_MESSAGE": "Grup üyeleri bulunamadı.",
+
+    "INBOX_NOT_FOUND_MESSAGE": "Inbox bulunamadı.",
+
+    "FOLDER_NOT_FOUND_MESSAGE": "Klasör bulunamadı",
+
+    "AUTHENTICATION_INFO_MESSAGE": "Kullanıcı bilgileriniz hatalı.",
+    "AUTHENTICATION_EXPIRE_MESSAGE": "Oturumunuz sonlandırldı. Tekrar giriş yapın.",
+
+    "GROUPS_CHANGE_INFO_MESSAGE": "Kullanıcı grup değişiklikleri kaydedildi.",
+    "FOLDER_DELETED_INFO_MESSAGE": "Klasör silindi.",
+    "UPDATE_INFO_MESSAGE": "Bilgiler güncellendi.",
+
+    "WAITING_FOR_APPROVAL": "İşleminiz onaya gönderildi.",
+    "OBJECT_LOCKED": "Obje kilitli. Üzerinde işlem yapılamıyor.",
+    "RESPONSIBLE_NOT_FOUND": "Onaylayan kişi bulunamadığı için işlem devam edemiyor.",
+    "NO_PROFILE_FOUND_WARNING": "No profile page found for this object!",
+    "NO_PROFILE_FOUND_TITLE": "No profile page!"
+}
