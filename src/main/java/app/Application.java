@@ -3,7 +3,6 @@ package app;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableMongoRepositories("com.sample.library.mongodb.repository")
 @ComponentScan({"com.sample.library.service","com.sample.library.controller"})
 @SpringBootApplication
-public class Application extends SpringBootServletInitializer{
+public class Application{
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
