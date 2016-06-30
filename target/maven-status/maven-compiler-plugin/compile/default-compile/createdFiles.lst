@@ -1,0 +1,12 @@
+com\sample\library\service\IBookService.class
+com\sample\library\controller\BookController.class
+com\sample\library\mongodb\model\Book.class
+app\Application$1.class
+com\sample\library\mongodb\config\MongoConfiguration.class
+com\sample\library\mongodb\repository\BookRepository.class
+com\sample\library\service\impl\BookService.class
+com\sample\library\model\ResponseDataModel.class
+com\sample\library\model\BookRequestModel.class
+com\sample\library\filter\CORSFilter.class
+app\Application.class
+com\sample\library\utils\ValidationErrorMessageUtil.class
