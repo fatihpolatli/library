@@ -247,6 +247,9 @@ define(['app'], function(app) {
                     if (data == null) {
 
                         $scope.bookList.pop();
+                    }else{
+
+                        $scope.bookList[$scope.bookList.length -1] = data;
                     }
 
                     //updateBookList(data);
