@@ -1,17 +1,48 @@
 define(['app'], function(app) {
     'use strict';
 
-    app.controller('HomeCtrl', ['$scope', 'BookService',
-        function($scope, BookService) {
+    app.controller('HomeCtrl', ['$scope', 'BookService', 'vcRecaptchaService',
+        function($scope, BookService, recaptcha) {
 
             $scope.bookList = [];
 
             var tempItem = null;
 
+            $scope.test = "asdasdasda";
+
+            $scope.myFields = {
+                myRecaptchaRespons: null
+            };
+
+
+
             $scope.deleteItem = {
                 item: null,
                 index: ""
             };
+
+            $scope.captchaSuccess = function(response) {
+
+
+                
+            }
+
+            $scope.mySubmit = function(response,hideFunction) {
+
+              
+
+                var postData = "g-recaptcha-response=" + $scope.myFields.myRecaptchaResponse;
+
+                BookService.validateCaptcha(postData, function(data) {
+
+                    if(data === true){
+
+                        hideFunction();
+
+                        $scope.addBook();
+                    }
+                });
+            }
 
 
             $scope.setDeleteItem = function(item, index) {
@@ -179,9 +210,9 @@ define(['app'], function(app) {
                 }
             }
 
-            $scope.saveBook = function(itemData, id,form) {
+            $scope.saveBook = function(itemData, id, form) {
 
-                if(!form.$valid){
+                if (!form.$valid) {
 
                     return;
                 }
@@ -213,7 +244,7 @@ define(['app'], function(app) {
 
                 BookService.edit(postData, function(data) {
 
-                    if(data == null){
+                    if (data == null) {
 
                         $scope.bookList.pop();
                     }
@@ -240,6 +271,8 @@ define(['app'], function(app) {
 
                     }
                 }
+
+
             };
         }
     ]);

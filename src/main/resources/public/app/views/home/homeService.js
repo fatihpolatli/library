@@ -46,6 +46,18 @@ define(['app'], function(app) {
 
             };
 
+            service.validateCaptcha = function(postData, callback) {
+
+                Base.all("validateCaptcha").customPOST(postData,undefined,undefined,{'Content-Type': "application/x-www-form-urlencoded; charset=UTF-8"}).then(function(data) {
+
+                    if (data.code === 200) {
+
+                        callback(data.data);
+                    }
+                });
+
+            };
+
 
             return service;
 

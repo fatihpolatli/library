@@ -34,7 +34,8 @@ define(['routes', 'dependencyResolverFor'], function(config, dependencyResolverF
         'mgcrea.ngStrap.helpers.parseOptions',
         'xeditable',
         'restangular',
-        'ui.router'
+        'ui.router',
+        'vcRecaptcha'
     ]).config(['$stateProvider',
         '$urlRouterProvider',
         '$routeProvider',

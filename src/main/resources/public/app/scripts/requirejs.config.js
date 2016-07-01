@@ -22,6 +22,7 @@ require.config({
         "angular-xeditable": "../../bower_components/angular-xeditable/dist/js/xeditable",
         "restangular": "../../bower_components/restangular/dist/restangular",
         "angular-ui-router": "../../bower_components/angular-ui-router/release/angular-ui-router",
+        "angular-recaptcha":"../../bower_components/angular-recaptcha/release/angular-recaptcha"
     },
     shim: {
         'app': {
@@ -45,6 +46,7 @@ require.config({
                 //'jquery',
                 "restangular",
                 "angular-ui-router",
+                "angular-recaptcha"
             ]
         },
         'angular-locale_tr-tr': {
@@ -102,6 +104,9 @@ require.config({
             deps: ['angular']
         },  
         'angular-ui-router': {
+            deps: ['angular']
+        },  
+        'angular-recaptcha': {
             deps: ['angular']
         }
     }

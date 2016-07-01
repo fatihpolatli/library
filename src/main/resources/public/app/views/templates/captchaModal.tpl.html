@@ -1,0 +1,24 @@
+<div class="modal modal-large modal-column modal-500 bg-schedule-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            {{test}}
+            function {{onCaptchaSuccess}} {{deleteFunction}}
+            </div>
+            <div class="modal-body">
+               <form name="myForm" ng-submit="mySubmit(myFields,$hide)">
+
+                    <div class="g-recaptcha" key="'6LfPCiQTAAAAAPrvl53WA3lcv0v9SU4OeLWWkt_u'" ng-model="myFields.myRecaptchaResponse" on-success="captchaSuccess(response)" vc-recaptcha></div>
+                    <br/>
+                    <input type="submit" value="Submit">
+                    <div> </div>
+                   
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
